@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERCURE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="/Hotil/images/MERCURE/PNG.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Home.css">
+</head>
+<body>
+    <header>
+        <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="180px" height="90px">
+        <nav>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <label for="input-1">
+                        <a href="#"></a>
+                        <input type="radio" id="input-1" name="group" checked>
+                        <span class="btn">
+                            <a href="#"><i class="btn-icon fa-solid fa-house"></i></a>
+                            <span class="btn-text">
+                                <a href="#">HOME</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-2">
+                        <a href="sign in.html"></a>
+                        <input type="radio" id="input-2" name="group" >
+                        <span class="btn">
+                            <a href="sign in.html"><i class="btn-icon fa-solid fa-contact-card"></i></a>
+                            <span class="btn-text">
+                                <a href="sign in.html">SIGN UP</a>
+                                
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-3">
+                        <a href="contact us.html"></a>
+                        <input type="radio" id="input-3" name="group" >
+                        <span class="btn">
+                            <a href="contact us.html"><i class="btn-icon fa-solid fa-location-arrow"></i></a>
+                            <span class="btn-text">
+                                <a href="contact us.html">CONTACT US</a>
+                            </span>
+                        </span>
+                    </label>
+                </li>
+                <li class="nav-item">
+                    <label for="input-4">
+                        <a href="Home-dark.html"></a>
+                        <input type="radio" id="input-4" name="group" >
+                        <span class="btn">
+                            <a href="Home-dark.html"><i class="btn-icon fa-solid fa-moon"></i></a>
+                            <span class="btn-text">
+                                <a href="Home-dark.html">DARK</a> 
+                            </span>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            
+        </nav>
+        
+    </header>
+    <main>
+        
+        <section-2 class="about">
+            <div><h1>ABOUT US</h1></div>
+        </section-2>
+        <section-3 class="abut">
+            
+                <div class="continer">
+                
+                    <h1>ABOUT HOTEL <i class="fa fa-hotel" aria-hidden="true"></i></h1>
+                
+                    <p>This quiet beachfront hotel is located on Timsah Lake, 3 km from the Suez Canal and 118 km from Cairo International Airport.
+                       The warm rooms have balconies overlooking the lake or the garden, as well as minibars, air conditioning, flat-screen TVs and free Wi-Fi. Room service is available 24/7.
+                     The hotel has free parking. There is also an outdoor swimming pool, a private beach, a sauna and a gym, as well as gardens, sports fields and a children's playground. Other amenities include 2 bars (one by the pool), 3 simple restaurants, as well as space for meetings and events. Breakfast is served (at an additional cost).</p>
+                </div>
+
+                <div class="abu-img"></div>
+
+            
+        </section-3>
+
+        <section-4 class="EXTERNAL-SCENCE">
+            <h1>EXTERNAL SCENCE</h1>
+            <div class="photo-scence">
+                <img src="/Hotil/images/photo_2023-01-05_19-53-21.webp" alt="photo_2023-01-05_19-53-21">
+                <img src="/Hotil/images/photo_2023-01-05_19-53-41.webp" alt="photo_2023-01-05_19-53-41">
+                <img src="/Hotil/images/photo_2023-01-05_19-54-50.webp" alt="photo_2023-01-05_19-54-50">
+                <img src="/Hotil/images/photo_2023-01-05_19-54-07.webp" alt="photo_2023-01-05_19-54-07">
+            </div>
+        </section-4>
+
+        <section-5 class="room">
+            <h1>ROOMS</h1>
+            <div class="photo-room">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-04.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-10.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-15.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-20.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-26.webp" alt="">
+                <img class="mySlides" src="/Hotil/images/photo_2023-01-06_17-35-30.webp" alt="">
+                <img class="mySlides" src="/Hotil/images/photo_2023-01-06_17-35-35.webp" alt="">
+                <img class="mySlides" src="images/photo_2023-01-06_17-35-41.webp" alt="">
+                <button class="right" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="left"  onclick="plusDivs(+1)">&#10095;</button>
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+                    
+                    function plusDivs(n) {
+                      showDivs(slideIndex += n);
+                    }
+                    
+                    function showDivs(n) {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      if (n > x.length) {slideIndex = 1}
+                      if (n < 1) {slideIndex = x.length}
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      x[slideIndex-1].style.display = "block";  
+                    }
+                </script>
+
+            </div>
+
+            <a href="#5555"><button class="book-naw"><a href="#5555">BOOK NOW</a></button></a>
+            
+
+        </section-5>
+
+        <section-6 class="Restaurants">
+            <h1>Resting Places</h1>
+            <div><h2>cafe</h2><img src="images/photo_2023-01-20_15-48-47.webp" alt=""></div>
+            <div><h2>Buffe </h2><img src="images/photo_2023-01-20_15-56-55.webp" alt=""></div>
+            <div><h2>Restaurant</h2> <img src="images/photo_2023-01-20_15-57-13.webp" alt=""></div>
+
+        </section-6>
+
+        <section-7 class="food">
+            <h1>FOOD</h1>
+            
+            <div>
+                <img src="images/photo_2023-01-22_16-36-55.webp" alt="">
+                <img src="images/photo_2023-01-22_16-37-09.webp" alt="">
+                <img src="images/photo_2023-01-22_16-37-22.webp" alt="">
+                <img src="images/photo_2023-01-22_16-38-03.webp" alt="">
+            </div>
+            <p>Please call at least 30 minutes in advance for catering requests</p>
+
+        </section-7>
+
+        <section-8 id="5555" class="Book">
+            <div class="book">
+                <h2>Book now</h2>
+                <p>what are you Looking up-to</p>
+                <form>
+                    <h3>USER NAME <br><input class="name" type="text" placeholder="name"></h3>
+                    <h3>check in <br><input class="check-sin" type="date" placeholder=""></h3>
+                    <h3>check out <br><input class="check-out" type="date" placeholder=""></h3>
+                    <h3>guests <br><input class="guests" type="number" placeholder="0"></h3>                    
+                </form>
+                <button>YOUR PERFECT HOTEL - JUST A CLICK AWAY</button>
+            </div>
+        </section-8>
+    </main>
+    
+    <footer>
+        <div>
+            <img src="/Hotil/images/MERCURE/PNG.png" alt="logo" width="20%">
+            <h4>ABOUT US</h4>
+            <h4>SIGN UP</h4>
+            <h4>CONTACT US</h4>
+        </div>
+        <div>
+            <h1>Social Media</h1>
+            <h4><a href="#">facbook <i class="fab fa-facebook" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">instagram <i class="fab fa-instagram" aria-hidden="true"></i></a></h4>
+            <h4><a href="#">twitter <i class="fab fa-twitter" aria-hidden="true"></i></a></h4>
+        </div>
+        <div>
+            <h1>Address & phone </h1>
+            <h4><i class="fa fa-map-marker" aria-hidden="true"></i> : AL SHAHEED ABDELMONUIM RAYED,<br>41511 ismailia    </h4>
+            <h4><i class="fa fa-phone" aria-hidden="true"></i> : 0643916318</h4>
+        </div>
+        <div>
+            <a href="#"><button>⬆</button></a>
+        </div>
+    </footer>
+    
+    
+    
+</body>
+</html>

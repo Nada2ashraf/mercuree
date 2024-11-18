@@ -1,0 +1,663 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+   
+body{
+    background-image: linear-gradient(270deg ,#607d8b , #94b3c1,#e9eded ,#94b3c1,#607d8b );
+    background-size: cover;
+    font-family: math;
+    
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #607d8b;
+   
+}
+::-webkit-scrollbar-thumb{
+    background-color: #8aa4b1;
+}    
+
+* ::selection{
+    background: #61ccff;
+    color: #fff;
+}
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background: #cfcdd300; */
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+    background-image: linear-gradient(180deg ,#607d8b ,#607d8b );
+}
+
+nav{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    border-radius: 16px;
+    background: #cfcdd300;
+}
+
+nav .nav-list {
+    display: flex;
+
+}
+
+nav .nav-item {
+    line-height: 55px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+header input{
+    display: none;
+}
+
+.btn .btn-icon {
+    color: #61ccff;
+    font-size: 24px;
+    transform: translateX(50px);
+    transition: all .3s;
+}
+
+.btn .btn-text {
+    color: #000;
+    font-size: 21px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+input:hover ~ .btn {
+    cursor: default;
+    background: #61ccff;
+}
+
+input:hover ~ .btn .btn-icon {
+    color: #000;
+    transform: translateX(-5px);
+}
+
+input:hover ~ .btn .btn-text {
+    opacity: 1;
+    transform: translateX(20px);
+    transition-delay: .2s;
+}
+
+video{
+    width: 0;
+    /* margin-top: 60px; */
+}
+
+.about {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+.abut{
+    display: flex;
+    justify-content: space-around;
+    height: 60VH;
+}
+ 
+.continer{
+    max-width: 60%;
+    height: 55%;
+    background: #607d8b;
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    overflow: hidden;
+    transition-duration:.5s;
+    color: white;
+    box-shadow: 0px 5px 10px 5px #00bcd4;
+}
+
+.continer h1{
+    color: #000;
+}
+
+.continer h1 i{
+    color: #845e50;
+}
+
+.continer:hover{
+    background: #1c91a0;
+    box-shadow: none;
+}
+
+.abut img{
+    width: 35%;
+    height: 100%;
+    border-radius: 54%;
+}
+
+.abu-img{
+    width:400px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+    background: url(/Hotil/images/photo_2023-01-05_19-20-11.webp);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 20px 0px 5px rgb(255 0 0 / 40%), 1px 20px 0px 20px #000;
+    animation: abu-img 3.7s linear infinite;
+}
+
+@keyframes abu-img {
+    0%,100%{
+        border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
+        box-shadow: inset 0px 0px 20px 10px #8bc34a;
+    }
+
+    33%{
+        border-radius: 42% 28% 48% 48% / 28% 28% 72% 72%;
+        box-shadow: inset 0px 0px 20px 10px rgb(255 229 0);
+    }
+
+    66%{
+        border-radius: 100% 56% 72% 100% / 100% 100% 56% 56%;
+        box-shadow: inset 0px 0px 20px 10px rgb(0 39 255);
+    }
+}
+
+.EXTERNAL-SCENCE{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-06_15-22-08.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.EXTERNAL-SCENCE h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    color: #000;
+    transform: translateY(10px);
+    padding: 10px;
+}
+
+
+.photo-scence img{
+    width: 24%;
+    height: 300px;
+    margin: .3%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 50px;
+    filter: blur(1.3px);
+}
+
+.photo-scence img:hover{
+    transform: translate(-5px, -15px);
+    transition: .5s;
+    filter: none;
+    box-shadow: 8px 8px 10px 0px #607d8b;
+}
+
+.room{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-06_23-35-19.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.room h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    color: #000;
+    transform: translateY(10px);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+.photo-room{
+    position: relative;
+    transform: translateY(-50px);
+
+}
+
+.photo-room img{
+    height: 300px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000000e0;
+}
+
+.photo-room .left{
+    position: absolute;
+    top: 40%;
+    right: -5%;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    height: 45px;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+}
+
+.photo-room button:hover{
+    outline: none;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+    transform: scale(1.2);
+}
+
+.photo-room button:focus{
+    background-color: #009688;
+    box-shadow: 0px 0px 0px 0px #000000e0;
+    color: #fff;
+}
+
+.photo-room .right{
+    position: absolute;
+    top: 40%;
+    left: -5%;
+    border: none;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background-color: inherit;
+    outline: none;
+    height: 45px;
+    width: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #000000e0;
+
+}
+
+
+button.book-naw{
+    width: 200px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: cursive;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px;
+    background: #9e9e9e;
+    border: 2px solid #ffeb3b00;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transform: translate(200px, -100px);
+    transition: transform 150ms cubic-bezier(0,0,0.58,1), 150ms cubic-bezier(0,0,0.58,1);
+}
+
+button.book-naw::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00968852;
+    border-radius: inherit;
+    transform: translate3d(0, 0.75em, -1em);
+    transition: transform 150ms cubic-bezier(0,0,0.58,1), 150ms cubic-bezier(0,0,0.58,1);
+}
+
+button.book-naw:hover{
+    background: #aeacac;
+    transform: translate(200px , -103px);
+}
+
+button.book-naw:hover:before{
+    box-shadow: 0 0.5em 0 0 #00968830;
+    transform: translate3d(0, 0.5em, -1em);
+}
+
+button.book-naw:active{
+    background: #b8b7b7;
+    transform: translate(200px, -95px);
+}
+
+button.book-naw:active:before{
+    transform: translate3d(0, 0, -1em);
+}
+
+button:focus ~ .book{
+    display:grid ;
+    transition: .7s;
+    z-index: 2;
+    
+}
+button:active ~ .book{
+    display:grid ;
+    transition: .7s;
+    z-index: 2;
+}
+
+.book{
+    /* width: 698px; */
+    height: 250px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #607d8b;
+    width: 80%;
+    /* box-shadow: 0px 0px 10px 0px #3F51B5; */
+    padding: 10px;
+
+    
+}
+
+.book form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.book form input {
+    outline: none;
+    border: solid #6e8e9d;
+    border-radius: 10px;
+    background-color: #c61d2300;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.book button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    /* width: 140px; */
+    font-size: larger;
+    background-color: #072e33;
+    color: #61ccff;
+    box-shadow: 0px 3px 1px 1px #000;
+}
+
+::placeholder{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    
+}
+
+.Restaurants{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-20_15-57-25.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    /* color: #fff; */
+    gap: 10px;
+}
+
+.Restaurants h1{
+    display: flex;
+    text-align: center;
+    background: #9e9e9e;
+    border-radius: 42% 56% 72% 28% / 42% 42% 50% 48%;
+}
+
+.Restaurants div{
+    overflow: hidden;
+    border-radius: 10px;
+    border-top: 4px #1c8fc6 solid;
+    padding: 5px;
+    width: 30%;
+}
+
+.Restaurants img{
+    width: 100%;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: .7s;
+}
+
+.Restaurants img:hover{
+    transform: scale(1.4);
+}
+
+.food{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+    /* background-image: url(/Hotil/images/photo_2023-01-22_16-18-26.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5px;
+    /* color: #fff; */
+}
+
+.food h1 {
+    font-weight: 800;
+    text-align: center;
+    font-size: 4rem;
+    padding: 10px;
+    /* border-bottom: 10px solid #ffc823; */
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: #070707;
+    /* text-decoration-style: wavy; */
+}
+
+.food div{
+    width: 100%;
+    display: flex;
+    height: 200px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.food img{
+    width: 17%;
+    height: 80%;
+    border-radius: 50%;
+    
+
+}
+
+.food img:hover{
+    transform: rotate(360deg) scale(1.25);
+    transition: .7s;
+}
+
+.food p{
+    text-align: center;
+    border-bottom: 5px solid #1c8fc6;
+    border-top: 5px solid #1c8fc6;
+    border-radius: 50%;
+    font-size: x-large;
+}
+
+.Book{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.book{
+    /* width: 698px; */
+    height: 250px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #607d8b;
+    width: 80%;
+    /* box-shadow: 0px 0px 10px 0px #3F51B5; */
+    padding: 10px;
+
+    
+}
+
+.book form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+}
+
+.book form input {
+    outline: none;
+    border: solid #6e8e9d;
+    border-radius: 10px;
+    background-color: #c61d2300;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.book button{
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    /* width: 140px; */
+    font-size: larger;
+    background-color: #072e33;
+    color: #61ccff;
+    box-shadow: 0px 3px 1px 1px #000;
+    transition: .2s;
+}
+
+::placeholder{
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+    
+}
+
+.book button:active {
+    box-shadow: 0px 1px 0px 0px #000;
+    transform: translate(0px, 5px);
+}
+
+footer{
+    background-color: #072E33;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    color: #14cad2;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    margin-top: 100px;
+}
+
+footer h1{
+    color: #fff;
+}
+
+footer a{
+    color: #14cad2;
+}
+
+footer img{
+    width: 100px;
+    height: 50px;
+}
+
+footer div{
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+}
+
+footer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: xxx-large;
+    overflow: hidden;
+    text-align: center;
+    background-color: #8aa4b1;
+    box-shadow: inset 0px 20px 0px 0px #ffffff;
+    border: 0;
+    color: #14cad2;
+    transition: .5s;
+}
+
+footer button:hover{
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    transform: scale(1.2);
+}
+
+footer button:active{
+    box-shadow: inset 0px -20px 0px 0px #ffffff;
+}
+
+

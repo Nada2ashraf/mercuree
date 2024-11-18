@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+   
+body{
+    background-image: linear-gradient(270deg ,#000000 , #4a4a4a,#7f7f7f ,#4a4a4a,#000000 );
+    background-size: cover;
+    font-family: math;
+    color: #fff;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #607d8b;
+   
+}
+::-webkit-scrollbar-thumb{
+    background-color: #8aa4b1;
+}    
+
+* ::selection{
+    background: #61ccff;
+    color: #fff;
+}
+
+
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+header{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    /* background: #cfcdd300; */
+    position: fixed;
+    height: 60px;
+    z-index: 1;
+    background-image: linear-gradient(180deg ,#000000 ,#000000 );
+}
+
+nav{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    border-radius: 16px;
+    background: #cfcdd300;
+}
+
+nav .nav-list {
+    display: flex;
+
+}
+
+nav .nav-item {
+    line-height: 55px;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+input{
+    display: none;
+}
+
+.btn .btn-icon {
+    color: #ffffff;
+    font-size: 24px;
+    transform: translateX(50px);
+    transition: all .3s;
+}
+
+.btn .btn-text {
+    color: #000;
+    font-size: 21px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+input:hover ~ .btn {
+    cursor: default;
+    background: #ffffff;
+}
+
+input:hover ~ .btn .btn-icon {
+    color: #000;
+    transform: translateX(-5px);
+}
+
+input:hover ~ .btn .btn-text {
+    opacity: 1;
+    transform: translateX(20px);
+    transition-delay: .2s;
+}
+
+video{
+    width: 0;
+    /* margin-top: 60px; */
+}
+
+.about {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.about h1{
+    font-weight: 800;
+    text-align: center;
+    font-size: 5rem;
+    letter-spacing: 10px;
+}
+
+.abut{
+    display: flex;
+    justify-content: space-around;
+    height: 60VH;
+}
+ 
+.continer{
+    max-width: 60%;
+    height: 55%;
+    background: #4e5355;
+    border-radius: 50px;
+    padding: 30px;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    overflow: hidden;
+    transition-duration:.5s;
+    color: white;
+    box-shadow: 0px 5px 10px 5px #003c44;
+}
+
+.continer h1{
+    color: #000;
+}
+
+.continer h1 i{
+    color: #845e50;
+}
+
+.continer:hover{
+    background: #0c3f46;
+    box-shadow: none;
+}
+
+main{
+    display: grid;
+    justify-items: center;
+}
+
+.map{
+    margin-top: 100px;
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 40px;
+    background-color: #6c6c6c1c;
+    width: 80%;
+    box-shadow: 0px 0px 10px 0px #3F51B5;
+}
+
+.map div{
+    width: 450px;
+
+}
+
+.location h1{
+    font-size: xxx-large;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.location h1 i{
+    color: #f00;
+}
+
+.location p{
+    padding: 10px;
+    color: #2196F3;
+}
+
+iframe{
+    border: solid #9E9E9E;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px 2px #387692;
+    height: 450px;
+}
+
+.address{
+    text-align: center;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+
+#sub-frame-error{
+    background-color: #000;
+}
+
+footer{
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    color: #a5a5a5;
+    justify-content: space-around;
+    align-items: center;
+    height: 160px;
+    margin-top: 100px;
+}
+
+footer h1{
+    color: #fff;
+}
+
+footer a{
+    color: #a5a5a5;
+}
+
+footer img{
+    width: 100px;
+    height: 50px;
+}
+
+footer div{
+    display: grid;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    align-content: space-around;
+}
+
+footer button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: xxx-large;
+    overflow: hidden;
+    text-align: center;
+    background-color: #000000;
+    box-shadow: inset 0px 20px 0px 0px #ffffff;
+    border: 0;
+    color: #a5a5a5;
+    transition: .5s;
+}
+
+footer button:hover{
+    box-shadow: inset 0px 0px 0px 0px #ffffff;
+    transform: scale(1.2);
+}
+
+footer button:active{
+    box-shadow: inset 0px -20px 0px 0px #ffffff;
+}
+
